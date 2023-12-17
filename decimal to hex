@@ -1,0 +1,12 @@
+decNum = int(input("Enter any Decimal Number: "))
+conversion_table = "0123456789ABCDEF"
+hex = []
+
+i = 0
+while decNum != 0:
+    x = decNum % 16
+    hex.insert(i,conversion_table[x])
+    decNum = decNum // 16
+    i = i + 1
+hex = hex[::-1]
+hex
