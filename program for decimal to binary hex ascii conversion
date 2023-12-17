@@ -1,0 +1,9 @@
+decNum = int(input("Enter any Decimal Number: "))
+remainder = []
+i = 0
+while decNum != 0:
+  remainder.insert(i,decNum % 2)
+  decNum = decNum // 2
+  i = i + 1
+
+remainder = remainder[::-1]
